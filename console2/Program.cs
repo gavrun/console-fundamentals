@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace console2
 {
@@ -28,7 +32,7 @@ namespace console2
             Console.WriteLine($"The name {firstFriend} has {firstFriend.Length} letters.");
             Console.WriteLine($"The name {secondFriend} has {secondFriend.Length} letters.");
 
-            //trim
+            //trim string
 
             string greeting = "      Hello World!       ";
             Console.WriteLine($"[{greeting}]");
@@ -42,7 +46,7 @@ namespace console2
             trimmedGreeting = greeting.Trim();
             Console.WriteLine($"[{trimmedGreeting}]");
 
-            //replace
+            //replace string
 
             string sayHello = "Hello World!";
             Console.WriteLine(sayHello);
@@ -53,7 +57,7 @@ namespace console2
             Console.WriteLine(sayHello.ToUpper());
             Console.WriteLine(sayHello.ToLower());
 
-            //search
+            //search string
 
             string songLyrics = "You say goodbye, and I say hello";
             Console.WriteLine(songLyrics.Contains("goodbye"));
@@ -134,7 +138,7 @@ namespace console2
             double min1 = double.MinValue;
             Console.WriteLine($"The range of double is {min1} to {max1}"); //significand + exponent
 
-            //rounding
+            //rounding a double
 
             double third = 1.0 / 3.0;
             Console.WriteLine(third);
@@ -233,8 +237,116 @@ namespace console2
             }
             Console.WriteLine("Hello World! The counter has ended");
 
+            //nested loop
+
+            for (int row = 1; row < 11; row++)
+            {
+                Console.WriteLine($"The row is {row}");
+            }
+            Console.WriteLine("The row count has ended");
+            for (char column = 'a'; column < 'k'; column++)
+            {
+                Console.WriteLine($"The column is {column}");
+            }
+            Console.WriteLine("The column count has ended");
+
+            for (int row1 = 1; row1 < 11; row1++)
+            {
+                for (char column1 = 'a'; column1 < 'k'; column1++)
+                {
+                    Console.WriteLine($"The cell is ({row1}, {column1})");
+                }
+            }
+            Console.WriteLine("The cell count has ended");
+
+            //sum of all integers 1 through 20 that are divisible by 3
+
+            int sum = 0;
+            for (int i = 1; i < 21; i++)
+            {
+                if (i % 3 == 0)
+                {
+                    sum = sum + i;
+                }
+            }
+            Console.WriteLine($"The sum is {sum}");
+
+            // var
+
+            var x1 = 10; //implicit > declared type
+            int x2 = 10; //explicit
 
 
+            //list
+
+            var nameslist = new List<string> {"Alexey","Ana","Felipe"};
+            foreach (var name in nameslist)
+            {
+                Console.WriteLine($"Hello {name.ToUpper()}!");
+            }
+
+            //modify list
+
+            Console.WriteLine("Modified list of names.");
+            nameslist.Add("Maria");
+            nameslist.Add("Bill");
+            nameslist.Remove("Ana");
+            foreach (var name in nameslist)
+            {
+                Console.WriteLine($"Hello {name.ToUpper()}!");
+            }
+
+            //index in list
+
+            Console.WriteLine($"My name is {nameslist[0]}.");
+            Console.WriteLine($"I've added {nameslist[2]} and {nameslist[3]} to the list.");
+
+            Console.WriteLine($"The list has {nameslist.Count} people in it.");
+
+            //search list
+
+            var index = nameslist.IndexOf("Felipe");
+            if (index != -1)
+                Console.WriteLine($"The name {nameslist[index]} is at index {index}");
+
+            var notFound = nameslist.IndexOf("Gretta");
+            Console.WriteLine($"When an item is not found, IndexOf returns {notFound}");
+
+            //sort list
+
+            nameslist.Sort();
+            foreach (var name in nameslist)
+            {
+                Console.WriteLine($"Hello {name.ToUpper()}!");
+            }
+
+            //list of integers 
+
+            var numlist = new List<int> {1,1};
+            var prev = numlist[numlist.Count - 1];
+            var prev2 = numlist[numlist.Count - 2];
+
+            numlist.Add(prev + prev2);
+
+            foreach (var item in numlist)
+                Console.WriteLine(item);
+
+            //list first 20 numbers of Fibonacci Sequence
+            Console.WriteLine("The first 20 numbers of Fibonacci Sequence");
+
+            var fiblist = new List<int> { 0, 1, 1 };
+            
+            while (fiblist.Count < 21)
+            {
+                var previtem1 = fiblist[fiblist.Count - 1];
+                var previtem2 = fiblist[fiblist.Count - 2];
+                fiblist.Add(previtem1 + previtem2);
+            }
+            
+            foreach (var nextitem in fiblist)
+                Console.WriteLine(nextitem);
+
+            // Congratulations! 100% complete!
         }
     }
 }
