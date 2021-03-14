@@ -1,0 +1,804 @@
+﻿            
+            
+            
+            
+            
+            //write code for your first programm here
+            Console.Write("Hello World!\n");
+            Console.Write("\n");
+
+
+
+
+
+
+            //variables
+            int A;
+            A = 1;
+            Console.WriteLine(A);
+            int B;
+            B = A * 8;
+            A = B - 8;
+            int C;
+            C = B + A;
+            Console.WriteLine(C);
+            Console.WriteLine("\n");
+
+            
+            
+            
+            
+            //calculations
+            Console.WriteLine(26);
+            Console.WriteLine(1024 + 48);
+            Console.WriteLine(5 + 8 * 2);
+            Console.WriteLine((5 + 8) * 2);
+            Console.WriteLine("\n");
+
+            
+            
+            
+            
+            
+            //formatting
+            Console.WriteLine("5 + 7 = " + 12);
+            Console.WriteLine(5 + " + " + 7 + " = " + 12);
+            Console.WriteLine(3 + " " + 6);
+            Console.WriteLine("\n");
+
+            
+            
+            
+            
+            
+            //data types
+            string name = "Ben";
+            int age = 28;
+            double weight = 80.5;
+            string output = name + " is " + age + " years old and " + weight + " kg heavy\n";
+            Console.WriteLine(output);
+
+            
+            
+            
+            
+            
+            //operations difference
+            int D = 5;
+            int E = 10;
+            Console.WriteLine(D + E);
+
+            string S1 = "5";
+            string S2 = "10";
+            Console.WriteLine(S1 + S2);
+            Console.WriteLine("\n");
+
+            
+            
+            
+            
+            //task
+            Console.Write(2 + "10 1024");
+            Console.WriteLine("\n");
+
+            
+            
+            
+            
+            //input
+            Console.WriteLine("Hey, what is your name?");
+            Console.WriteLine("Input a name");
+            string name2 = Console.ReadLine();
+            Console.WriteLine("Hi, " + name2 + "!\n");
+
+            
+            
+            
+            
+            
+            
+            //converting
+            Console.WriteLine("Input a number\n");
+            string S3 = Console.ReadLine();
+            int X = Convert.ToInt32(S3);
+            Console.WriteLine("Input another two numbers\n");
+            int F = Convert.ToInt32(Console.ReadLine());
+            int G = Convert.ToInt32(Console.ReadLine());
+            int H = F + G;
+            Console.WriteLine("Sum of them equals");
+            Console.WriteLine(H);
+            Console.WriteLine("or");
+            Console.WriteLine(F + G);
+            Console.WriteLine("\n");
+
+            
+            
+            
+            //refactoring
+            Console.WriteLine("Input only numbers here\n");
+            int Y = Convert.ToInt32(Console.ReadLine());
+
+            
+            
+            
+            
+            //problem1
+            Console.WriteLine("Input two numbers here and they will be swapped\n");
+            int a1 = Convert.ToInt32(Console.ReadLine());
+            int b1 = Convert.ToInt32(Console.ReadLine());
+            int c1;
+            c1 = b1;
+            b1 = a1;
+            a1 = c1;
+            Console.WriteLine(a1 + " " + b1 + "\n");
+
+            
+            
+            
+            
+            //binary operations
+            Console.WriteLine("Let's play!\n");
+            int a2 = 5;
+            int b2 = 2;
+            Console.WriteLine("a =  " + a2 + ", b = " + b2);
+
+            int result2 = a2 + b2;
+            Console.WriteLine("Addition, a + b =  " + result2);
+
+            result2 = a2 * b2;
+            Console.WriteLine("Multiplication, a * b =  " + result2);
+
+            result2 = a2 / b2;
+            Console.WriteLine("Division, a / b =  " + result2 + " where a and b int numbers");
+
+            int result2Mod = a2 % b2;
+            Console.WriteLine("Division with a remainder a % b =  " + result2Mod + " the remainder\n");
+
+            
+            
+            
+            
+            //unary operations
+            int a3 = 0, b3 = 6;
+            a3++;
+            b3--;
+            Console.WriteLine(a3 + " and " + b3);
+            Console.WriteLine("Gave over..\n");
+
+            
+            
+            
+            
+            
+            //analisys
+            Console.WriteLine("Input a number here\n");
+            int a4 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("a/10 = " + a4 / 10);
+            Console.WriteLine("a%10 = " + a4 % 10);
+
+            int a5 = 1024;
+            Console.WriteLine("a % 10 = " + a5 % 10); // 4
+            Console.WriteLine("a % 100 = " + a5 % 100); // 24
+            Console.WriteLine("a % 1000 = " + a5 % 1000); // 24
+            Console.WriteLine("a % 10000 = " + a5 % 10000); // 1024
+
+            int a6 = 1024;
+            Console.WriteLine("a / 10 = " + a6 / 10); // 102
+            Console.WriteLine("a / 100 = " + a6 / 100); // 10
+            Console.WriteLine("a / 1000 = " + a6 / 1000); // 1
+            Console.WriteLine("a / 10000 = " + a6 / 10000); // 0 
+
+            
+            
+            
+            
+            
+            
+            //real numbers
+            Console.WriteLine("Input a number here maybe\n");
+            double d7 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Works differently\n");
+            int n8 = 5;
+            int integerDivider = 2;
+            Console.WriteLine(n8 / integerDivider); // 2
+            double doubleDivider = 2;
+            Console.WriteLine(n8 / doubleDivider); // 2.5
+
+            double d9 = 2.9;
+            int n9 = (int)(d9); // 2
+            Console.WriteLine(n9);
+
+            
+            
+            
+            
+            
+            //mixing integer and real
+            Console.WriteLine("Works differently\n");
+            int a10 = 5, b10 = 3;
+            double c10 = a10 / b10;
+            Console.WriteLine(c10);  // 1
+            int a11 = 5, b11 = 3;
+            double c11 = (double)a11 / b11;
+            Console.WriteLine(c11); // 1.6666666667
+
+            
+            
+            
+            
+            //math
+            Console.WriteLine("Some more math\n");
+            int b12 = -9;
+            double a12 = Math.Abs(b12); // module
+            Console.WriteLine(a12);
+
+            double b13 = 9;
+            double a13 = Math.Pow(b13, 2); // b power 2
+            Console.WriteLine(a13);
+
+            double b14 = 9;
+            double a14 = Math.Sqrt(b14); // square root of 9
+            Console.WriteLine(a14);
+
+            double a15 = 3;
+            double b15 = 9;
+            double c15 = Math.Max(a15, b15);
+            Console.WriteLine(c15); 
+            double d15 = Math.Min(a15, b15);
+            Console.WriteLine(d15);
+
+           
+           
+           
+           
+           //task
+            Console.WriteLine("Even more math\n");
+            int a16 = Convert.ToInt32(Console.ReadLine());
+            a16 = a16 * a16;
+            Console.WriteLine(a16);
+
+            
+            
+            
+            
+            
+            //if 
+            
+            Console.WriteLine("Input a number\n");
+            int x17 = Convert.ToInt32(Console.ReadLine());
+            if (x17 > 10) 
+            {
+                Console.WriteLine(x17); //true
+            }
+            Console.WriteLine("Error X17\n"); //false
+
+            Console.WriteLine("Input two more numbers\n");
+            int x18 = Convert.ToInt32(Console.ReadLine());
+            int y18 = Convert.ToInt32(Console.ReadLine());
+            if (x18 > 10)
+            {
+                if (y18 < 8)
+                {
+                    Console.WriteLine(x18 + y18); //true
+                }
+            }
+
+            
+            
+            
+            
+            
+            //if else
+            Console.WriteLine("Input a number\n");
+            int x19 = Convert.ToInt32(Console.ReadLine());
+            if (x19 > 0)
+            {
+                Console.WriteLine("Positive");
+            }
+                else
+                {
+                    Console.WriteLine("Negative");
+                }
+
+           
+           
+           
+           
+           
+           //comparison
+            Console.WriteLine("Math again\n");
+            int b20 = 2;
+            int c20 = 3;
+            int d20 = 2;
+            Console.WriteLine(b20 > c20); // false
+            Console.WriteLine(b20 < c20); // true
+            Console.WriteLine(b20 >= c20); // false
+            Console.WriteLine(b20 >= d20); // true
+            Console.WriteLine(b20 == c20); // false
+            Console.WriteLine(b20 == d20); // true
+            Console.WriteLine(b20 != c20); // true
+
+            //task
+            Console.WriteLine("Input two numbers to compare\n");
+            int a21 = Convert.ToInt32(Console.ReadLine());
+            int b21 = Convert.ToInt32(Console.ReadLine());
+            if (a21 == b21)
+            {
+                Console.WriteLine("Equal\n");
+            }
+                else
+                {
+                    Console.WriteLine("Different\n");
+                }
+
+
+            
+            
+
+
+
+
+
+            //if else
+
+            Console.WriteLine("Input a number\n");
+            int x19 = Convert.ToInt32(Console.ReadLine());
+            if (x19 > 0)
+            {
+                Console.WriteLine("Positive\n");
+            }
+            else
+            {
+                Console.WriteLine("Negative\n");
+            }
+
+            //comparison 
+
+            Console.WriteLine("Input two numbers to compare\n");
+            int a21 = Convert.ToInt32(Console.ReadLine());
+            int b21 = Convert.ToInt32(Console.ReadLine());
+            if (a21 == b21)
+            {
+                Console.WriteLine("Equal\n");
+            }
+            else
+            {
+                Console.WriteLine("Different\n");
+            }
+
+
+
+
+
+
+            //logical NOT
+            bool a = true;
+            bool b = !a; // false
+            bool c = !b; // true 
+            Console.Write(a);
+            Console.Write(b);
+            Console.WriteLine(c);
+
+
+
+
+
+
+            //logical AND
+            bool a = true;
+            bool b = true;
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+
+            bool c;
+            _ = a && b; // true
+            _ = !a && b; // false
+            _ = a && !b; // false
+            _ = !a && !b; // false
+            c = !(a && b);
+            Console.WriteLine(c);
+
+
+
+
+
+
+
+            //logical OR
+            bool a = true;
+            bool b = true;
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+
+            bool c;
+            _ = a || b; // true
+            _ = !a || b; // true
+            _ = a || !b; // true
+            c = !a || !b; // false
+            Console.WriteLine(c);
+
+
+
+
+
+
+
+
+            //compare with logic
+            Console.WriteLine("Input three numbers to compare\n");
+
+            int a = Convert.ToInt32(Console.ReadLine());
+            int b = Convert.ToInt32(Console.ReadLine());
+            int c = Convert.ToInt32(Console.ReadLine());
+
+            if (a == b && b == c)
+            {
+                Console.WriteLine("YES");
+            }
+            else
+            {
+                Console.WriteLine("NO");
+            }
+
+
+
+
+
+
+
+
+                        //compare with logic
+            int a;
+            int b;
+            bool c;
+            bool d;
+
+            a = 10; b = 20; c = true; d = false;
+
+            Console.WriteLine("In\n");
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+            Console.WriteLine(c);
+            Console.WriteLine(d);
+
+            bool e = !(a < 15) || !(b < 30);
+            bool f = (a > 5) && (b > 5) && (a < 20) && (b < 30);
+            bool g = c || d && (b == 20);
+
+            Console.WriteLine("Out\n");
+            Console.WriteLine(e);
+            Console.WriteLine(f);
+            Console.WriteLine(g);
+
+
+
+
+
+
+
+
+            //compare if leap year > 2020, 2016, 2012, 2008, 2004
+            Console.WriteLine("Input a year number\n");
+
+            int a = Convert.ToInt32(Console.ReadLine());
+
+            if ( (a % 4 == 0 && a % 100 != 0) || (a % 400 == 0) )
+            { 
+                Console.WriteLine("Leap\n"); 
+            } 
+                else 
+            { 
+                Console.WriteLine("Common\n"); 
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+                        //compare with zero
+            Console.WriteLine("Input a number\n");
+
+            int a = Convert.ToInt32(Console.ReadLine());
+
+            if (a > 0)
+            {
+                Console.WriteLine("Positive\n");
+            }
+            else
+            {
+                if (a < 0)
+                {
+                    Console.WriteLine("Negative\n");
+                }
+                else
+                {
+                    Console.WriteLine("Zero\n");
+                }
+            }
+
+
+
+
+
+
+
+
+
+                        //if nested
+            string a = Console.ReadLine();
+
+            if (a == "Jump")
+            {
+                Console.WriteLine("I like jumping!");
+            }
+            else
+            {
+                if (a == "Swimm")
+                {
+                    Console.WriteLine("I like swimming!");
+                }
+                else
+                {
+                    if (a == "Fly")
+                    {
+                        Console.WriteLine("I dream to fly!");
+                    }
+                }
+            }
+
+
+
+
+
+
+
+
+                        //switch
+            string a = Console.ReadLine();
+
+            switch (a)
+            {
+                case "Jump": Console.WriteLine("I like jumping!"); break;
+                case "Swimm": Console.WriteLine("I like swimming!"); break;
+                case "Fly": Console.WriteLine("I dream to fly!"); break;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+                        //switch
+            Console.WriteLine("Would you like to jump, swimm, or fly the most?");
+            string a = Console.ReadLine();
+
+            switch (a)
+            {
+                case "Jump": Console.WriteLine("I like jumping!"); break;
+                case "Swimm": Console.WriteLine("I like swimming!"); break;
+                case "Fly": Console.WriteLine("I dream to fly!"); break;
+            }
+
+
+
+
+
+
+
+
+
+
+
+                        //task
+            Console.WriteLine("Input a price (dollar/cents) of an item and how many of them you need here\n");
+
+            int a = Convert.ToInt32(Console.ReadLine()); //dollar
+            int b = Convert.ToInt32(Console.ReadLine()); //cent
+            int n = Convert.ToInt32(Console.ReadLine()); //item
+
+            a = a * 100;
+
+            int p = a + b; //price in cents
+            int t = n * p; //total in cents
+
+            Console.Write(t / 100 + " dollars and ");
+            Console.WriteLine(t % 100 + " cents");
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        //task 15.89 > 8
+            Console.WriteLine("Input a real positive number");
+            
+            double a = Convert.ToDouble(Console.ReadLine());
+            double b = a * 10;
+            int c = (int)b;
+            int d = c % 10;
+            
+            Console.WriteLine(d);
+
+
+
+
+
+
+
+
+            //task
+            int n = Convert.ToInt32(Console.ReadLine()); //students
+            int k = Convert.ToInt32(Console.ReadLine()); //apples
+            int m = k % n;
+            int l = n - m;
+            int r = l % n; //(n-k%n)%n
+
+            Console.WriteLine(r);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        //equasion ax2 + bx + c = 0
+            Console.WriteLine("Here is the equasion ax2 + bx + c = 0 where you input a, b, and c.");
+
+            double a = Convert.ToDouble(Console.ReadLine()); //not 0
+            double b = Convert.ToDouble(Console.ReadLine());
+            double c = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Discriminant of the equasion"); //d = b2 - 4ac can be D > 0, D = 0, D < 0
+
+            double D = b * b - 4 * a * c;
+            Console.WriteLine(D);
+
+            double x1 = (-b + Math.Sqrt(D)) / (2 * a);
+            double x2 = (-b - Math.Sqrt(D)) / (2 * a);
+            double x3 = (-b) / (2 * a);
+
+            Console.WriteLine("Root(s) of the equasion");
+
+            if (D > 0)
+            {
+                if (x1 < x2) //print root x1 = - b + sqrt(D) / (2 * a) if less x2 = - b - sqrt(D) / (2 * a)
+                {
+                    Console.WriteLine(x1);
+                    Console.WriteLine(x2);
+                }
+                else
+                {
+                    Console.WriteLine(x2);
+                    Console.WriteLine(x1);
+                }
+            }
+            else
+            {
+                if (D == 0) //print the only root x3 = (- b) / (2 * a)
+                {
+                    Console.WriteLine(x3);
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+            //task
+                        bool a = false;
+            bool b = true;
+            bool c = false;
+
+            bool q1 = a && b && c;
+            bool q2 = a && !b || c;
+            bool q3 = a && (!b || c);
+            bool q4 = !a;
+            bool q5 = !a || !b && c;
+            bool q6 = !a || b || c;
+            bool q7 = a || !b || c;
+            bool q8 = !a && b || !c;
+            bool q9 = !a && b && !c;
+
+            Console.WriteLine(q1);
+            Console.WriteLine(q2);
+            Console.WriteLine(q3);
+            Console.WriteLine(q4);
+            Console.WriteLine(q5);
+            Console.WriteLine(q6);
+            Console.WriteLine(q7);
+            Console.WriteLine(q8);
+            Console.WriteLine(q9);
+
+
+
+
+
+
+            //task
+                        int a = 30;
+            int b = 6;
+            a = a / 2 * b;
+            int c;
+            if (a > b)
+            {
+                c = a - 3 * b;
+            }
+            else
+            {
+                c = a + 3 * b;
+            }
+            Console.WriteLine(c);
+
+
+
+
+
+
+
+            //task
+
+                        int a = 56;
+            int b = 7;
+            int k = 6;
+            a = a / 7 - b;
+            int c;
+            if (a > b)
+            {
+                c = a - k * b;
+            }
+            else
+            {
+                c = a + k * b;
+            }
+            Console.WriteLine(c);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
